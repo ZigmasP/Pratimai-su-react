@@ -3,7 +3,6 @@ import { useState } from "react";
 const Input = () => {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
-  const [age, setAge] = useState("");
   const [favourite, setFavourite] = useState("");
 
   return (
@@ -23,13 +22,6 @@ const Input = () => {
         value={surname}
         onChange={(event) => setSurname(event.target.value)}
         placeholder="Pavardė..."
-        style={{ marginBottom: 16 }}
-      />
-      <input
-        type="number"
-        value={age}
-        onChange={(event) => setAge(event.target.value)}
-        placeholder="Metai..."
         style={{ marginBottom: 16 }}
       />
      
