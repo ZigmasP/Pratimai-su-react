@@ -7,17 +7,10 @@ const Input = () => {
   const [favourite, setFavourite] = useState("");
 
   return (
-    <div>
-      <h3>
-        Vardas {name} {" "}
-      </h3>
-      <h3>
-        Pavardė {surname} {" "} 
-     </h3>
-     
+   
       <div>
-        {name} mėgstamiausias augintinis yra {favourite}
-      </div>
+        {name} {surname} mėgstamiausias gyvūnas yra {favourite}
+    
       <input
         type="text"
         value={name}
@@ -50,7 +43,7 @@ const Input = () => {
         <option value="Katė">Katė</option>
         <option value="Šinšila">Šinšila</option>
         <option value="Žiurkėnas">Žiurkėnas</option>
-        <option value="Arklys">arklys</option>
+        <option value="Arklys">Arklys</option>
       </select>
     </div>
   );

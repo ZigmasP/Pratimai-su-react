@@ -1,8 +1,11 @@
 import { useState } from "react";
 
-const LoginForm = () => {
+const Login = () => {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [age, setAge] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState({});
 
@@ -32,7 +35,7 @@ const LoginForm = () => {
   if (isLoggedIn) {
     return (
       <div>
-        <h3>Hello {email}, nice to meet you :)</h3>
+        <h3>Sveiki {name}, malonu matyti :)</h3>
         <button onClick={handleLogOut}>Log Out</button>
       </div>
     );
@@ -40,6 +43,26 @@ const LoginForm = () => {
 
   return (
     <form name="login-form" onSubmit={handleSubmit}>
+     <div style={{ marginBottom: 16 }}>
+        <label htmlFor="name">Vardas</label>
+        <input
+          type="name"
+          id="name"
+          name="name"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
+      </div>
+      <div style={{ marginBottom: 16 }}>
+        <label htmlFor="surname">Pavardė</label>
+        <input
+          type="surname"
+          id="surname"
+          name="surname"
+          value={surname}
+          onChange={(event) => setSurname(event.target.value)}
+        />
+      </div>
       <div style={{ marginBottom: 16 }}>
         <label htmlFor="email">El. paštas</label>
         <input
@@ -64,10 +87,19 @@ const LoginForm = () => {
         />
         <p style={{ color: "red" }}>{error.password}</p>
       </div>
-
+      <div style={{ marginBottom: 16 }}>
+        <label htmlFor="age">Metai</label>
+        <input
+          type="age"
+          id="age"
+          name="age"
+          value={age}
+          onChange={(event) => setAge(event.target.value)}
+        />
+      </div>
       <button type="submit">Login</button>
     </form>
   );
 };
 
-export default LoginForm;
+export default Login;
