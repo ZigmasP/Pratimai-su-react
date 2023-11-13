@@ -52,7 +52,7 @@ const Login = () => {
      </h3>
    
      <form name="login-form" onSubmit={handleSubmit}>
-      <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 10 }}>
         <label htmlFor="name">Vardas</label>
         <input
           type="name"
@@ -62,7 +62,7 @@ const Login = () => {
           onChange={(event) => setName(event.target.value)}
         />
       </div>
-      <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 10 }}>
         <label htmlFor="surname">Pavardė</label>
         <input
           type="surname"
@@ -72,7 +72,7 @@ const Login = () => {
           onChange={(event) => setSurname(event.target.value)}
         />
       </div>
-      <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 10 }}>
         <label htmlFor="age">Metai</label>
         <input
           type="age"
@@ -82,7 +82,7 @@ const Login = () => {
           onChange={(event) => setAge(event.target.value)}
         />
       </div>
-      <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 10 }}>
         <label htmlFor="email">El. paštas</label>
         <input
           type="email"
@@ -94,7 +94,7 @@ const Login = () => {
         />
         <p style={{ color: "red" }}>{error.email}</p>
        </div>
-       <div style={{ marginBottom: 16 }}>
+       <div style={{ marginBottom: 10 }}>
         <label htmlFor="email">Slaptažodis</label>
         <input
           type="password"
@@ -105,7 +105,7 @@ const Login = () => {
         />
         <p style={{ color: "red" }}>{error.password}</p>
        </div>
-       <div style={{ marginBottom: 16 }}>
+       <div style={{ marginBottom: 10 }}>
         <label htmlFor="email">Pakartokite slaptažodį</label>
         <input
           type="password"
