@@ -12,12 +12,12 @@
 
 body {
   margin: 0;
-  width: 500px;
+  width: 400px;
   background-color: aquamarine;
 }
 
 a {
-  font-weight: 500;
+  font-weight: 300;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -28,7 +28,7 @@ a:hover {
 input,
 select {
   display: block;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #535bf2;
   font-size: 1rem;

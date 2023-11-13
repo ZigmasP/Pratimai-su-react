@@ -15,18 +15,18 @@ const Input = () => {
         value={name}
         onChange={(event) => setName(event.target.value)}
         placeholder="Vardas..."
-        style={{ marginBottom: 16 }}
+        style={{ marginBottom: 10 }}
       />
        <input
         type="text"
         value={surname}
         onChange={(event) => setSurname(event.target.value)}
         placeholder="Pavardė..."
-        style={{ marginBottom: 16 }}
+        style={{ marginBottom: 10 }}
       />
      
       <select
-        style={{ width: 200 }}
+        style={{ width: 220 }}
         value={favourite}
         onChange={(event) => setFavourite(event.target.value)}
       >
